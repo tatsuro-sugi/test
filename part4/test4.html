@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>確認テスト</title>
+    <style>
+      .container {
+          width: 500px;
+          margin: 100px auto;
+          font-size: 15px;
+      }
+      button {
+          margin-top: 40px;
+      }
+  </style>
+</head>
+<body>
+  <p>(1)侵襲を受けると反応する2つの内分泌システムについて、（）に当てはまる適切な語句はどれか。</p>
+  <p>
+      視床下部 - 下垂体 - （①) <br>
+      交感神経 - (②)
+  </p>
+    <div class="container">
+        <input type="checkbox" class="checks" value="①…不正解"> ①副腎髄質・②副交感神経<br>
+        <input type="checkbox" class="checks" value="②…正解">①副腎皮質・②副腎髄質<br>
+        <input type="checkbox" class="checks" value="③…不正解"> ①副交感神経・②副腎髄質<br>
+        <input type="checkbox" class="checks" value="④…正解"> ①副腎皮質・②下垂体<br>
+        <button onclick="getValue()">結果を表示</button>
+    </div>
+
+    <p>(2)次の文章を読み、( )に入る適切な選択肢を1つ選びなさい。</p>
+    <p>
+        侵襲を受けると、(①）やカテコラミンが肝臓や筋肉に作用し、（②）が起こる。<br>
+        またカテコラミンはインスリン（③）を高める。<br>
+        その結果、血糖が上昇する。
+    </p>
+      <div class="container">
+          <input type="checkbox" class="checks" value="①…不正解">①アルドステロン・②血管収縮・③感受性<br>
+          <input type="checkbox" class="checks" value="②…不正解">①コルチゾール・②糖新生・③感受性<br>
+          <input type="checkbox" class="checks" value="③…不正解">①アルドステロン・②血流増加・③抵抗性<br>
+          <input type="checkbox" class="checks" value="④…正解">①コルチゾール・②糖新生・③抵抗性<br>
+          <button onclick="getValue()">結果を表示</button>
+      </div>
+    
+    <input type="button" onclick="location.href='../part1/part1.html'" value="教材へ戻る">
+    <script>
+      function getValue() {
+          var checks = document.getElementsByClassName('checks');
+          var str = '';
+
+          for ( i = 0; i < checks.length; i++) {
+              if ( checks[i].checked === true ) {
+                  str += checks[i].value + " ";
+              }
+          }
+          alert(str);
+      }
+  </script>
+</body>
+</html>

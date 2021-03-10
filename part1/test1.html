@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>確認テスト</title>
+    <style>
+      .container {
+          width: 500px;
+          margin: 100px auto;
+          font-size: 15px;
+      }
+      button {
+          margin-top: 40px;
+      }
+  </style>
+</head>
+<body>
+  <p>ホメオスタシス・侵襲に関する選択肢から、正しいものを2つ選びなさい。</p>
+    <div class="container">
+        <input type="checkbox" class="checks" value="①…不正解（もう一度ホメオスタシスの意味を復習しましょう）"> ①ホメオスタシスとは、外部の環境に合わせて生体環境を変化させていくことを指す<br>
+        <input type="checkbox" class="checks" value="②…正解"> ②ホメオスタシスとは、外部・内部環境が変化しても、生体環境を一定に保とうとするはたらきを指す<br>
+        <input type="checkbox" class="checks" value="③…不正解（もう一度侵襲の意味を復習しましょう"> ③薬剤は侵襲といえるが、不安は侵襲とはいえない<br>
+        <input type="checkbox" class="checks" value="④…正解"> ④侵襲とは、ホメオスタシスを破綻させる刺激のこと全てを指す<br>
+        <button onclick="getValue()">結果を表示</button>
+        <input type="button" onclick="location.href='../part1/part1.html'" value="教材へ戻る">
+    </div>
+
+    <script>
+      function getValue() {
+          var checks = document.getElementsByClassName('checks');
+          var str = '';
+
+          for ( i = 0; i < checks.length; i++) {
+              if ( checks[i].checked === true ) {
+                  str += checks[i].value + " ";
+              }
+          }
+          alert(str);
+      }
+  </script>
+</body>
+</html>

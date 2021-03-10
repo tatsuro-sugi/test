@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>確認テスト</title>
+    <style>
+      .container {
+          width: 500px;
+          margin: 100px auto;
+          font-size: 15px;
+      }
+      button {
+          margin-top: 40px;
+      }
+  </style>
+</head>
+<body>
+  <p>次の文章の（　）に当てはまる語句が適切に述べられている選択肢はどれか。１つ選びなさい。</p>
+  <p>侵襲が起きると、生体防御反応の結果、血球成分のうち（１）が活性化する。生体は①のはたらきをより活性化させるため、体温を上げようと（２）が起きる。
+    また感染や手術といった侵襲を受けると、（３）のはたらきによって、全身で炎症反応が生じる。
+    </p>
+    <div class="container">
+        <input type="checkbox" class="checks" value="不正解"> １：赤血球 ２：シバリング ３：サイトウサン<br>
+        <input type="checkbox" class="checks" value="不正解"> １：白血球 ２：ジャグリング ３：サイトウサン<br>
+        <input type="checkbox" class="checks" value="正解！"> １：白血球 ２：シバリング ３：サイトカイン<br>
+        <input type="checkbox" class="checks" value="不正解"> １：赤血球 ２：シバリング ３：サイトカイン<br>
+        <button onclick="getValue()">結果を表示</button>
+        <input type="button" onclick="location.href='../part2/part2.html'" value="教材へ戻る">
+    </div>
+
+    <script>
+      function getValue() {
+          var checks = document.getElementsByClassName('checks');
+          var str = '';
+
+          for ( i = 0; i < checks.length; i++) {
+              if ( checks[i].checked === true ) {
+                  str += checks[i].value + " ";
+              }
+          }
+          alert(str);
+      }
+  </script>
+</body>
+</html>

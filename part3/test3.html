@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>確認テスト</title>
+    <style>
+      .container {
+          width: 500px;
+          margin: 100px auto;
+          font-size: 15px;
+      }
+      button {
+          margin-top: 40px;
+      }
+  </style>
+</head>
+<body>
+  <p>次の文章の空欄に入る語句を適切に述べている選択肢を1つ選びなさい。</p>
+  <p>
+    炎症反応の結果、（1）が亢進する。<br>
+    その結果、血漿成分は（2）へ移行する。<br>
+    炎症反応の軽快とともに、血漿成分は血管内に戻ってくる。<br>
+    この現象を（3）という。
+  </p>
+
+    <div class="container">
+        <input type="checkbox" class="checks" value="不正解"> １：リフィリング ２：血管内 ３：血管透過性<br>
+        <input type="checkbox" class="checks" value="不正解">１：リフィリング ２：サードスペース ３：血管透過性<br>
+        <input type="checkbox" class="checks" value="不正解"> １：血管透過性 ２：細胞内 ３：リフィリング<br>
+        <input type="checkbox" class="checks" value="正解"> １：血管透過性 ２：サードスペース ３：リフィリング<br>
+        <button onclick="getValue()">結果を表示</button>
+        <input type="button" onclick="location.href='../part3/part3.html'" value="教材へ戻る">
+    </div>
+
+    <script>
+      function getValue() {
+          var checks = document.getElementsByClassName('checks');
+          var str = '';
+
+          for ( i = 0; i < checks.length; i++) {
+              if ( checks[i].checked === true ) {
+                  str += checks[i].value + " ";
+              }
+          }
+          alert(str);
+      }
+  </script>
+</body>
+</html>
