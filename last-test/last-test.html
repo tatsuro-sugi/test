@@ -3,22 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>最終テスト</title>
-    <style>
-      .container {
-          width: 500px;
-          margin: 100px auto;
-          font-size: 15px;
-      }
-      button {
-          margin-top: 40px;
-      }
-  </style>
+    
     <link rel="stylesheet" href="../stylesheet.css">
 
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <a href="../e-learning/index.html">侵襲と生体反応
+      </a>
+    </div>
+    
+    <div class="menu">
+      <ul>
+        <li><a href="../part1/part1.html">第1章</a></li>
+        <li><a href="../part2/part2.html">第2章</a></li>
+        <li><a href="../part3/part3.html">第3章</a></li>
+        <li><a href="../part4/part4.html">第4章</a></li>
+        <li><a href="../part5/part5.html">第5章</a></li>
+        <li><a href="../last-test/last-test.html">まとめテスト</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <div class="container">
   <section>
-  <h2>最終テスト</h2>
+  <div class="section_last_title">
+      <h1>最終テスト</h1>
+  </div>
   <p>
     いよいよ最終テストです。<br>
     ここまで学んだ知識を活かして、実際に侵襲を受けた患者さんのアセスメントをしていきましょう！
@@ -145,14 +157,20 @@
 </p>
 
 <img src="../last-test/good.png">
-<p>
-  <input type="button" onclick="location.href='../index.html'" value="トップへ戻る">
-</p>
+
+<hr>
+
 
 <p>
   最終テストに全問正解できた方は、こちらをクリックしてください。
-  <input type="button" onclick="location.href='../end/end.html'" value="最後に">
 </p>
+
+<div class="btn">
+  <a href="../end/end.html" class="btn-push">Click Here!</a>
+  <a href="../index.html" class="btn-push">トップへ</a>
+</div>
+
+</div>
 
 </body>
 </html>

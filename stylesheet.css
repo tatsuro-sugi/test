@@ -23,13 +23,360 @@
   padding: 0;
 }
 
-
-
-ul li, ol li {
-  line-height: 1.5; /*文の行高*/
-  padding: 0.5em 0; /*前後の文との余白*/
+* {
+  box-sizing: border-box;
 }
 
-body{
-  background:#fffbf4;
+body {
+  margin: 0;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: white;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  padding: 0px 15px;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.menu{
+  margin: 0 0 0 auto;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+/*セクション1タイトル*/
+.section1_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section1_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '第1章';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*セクション2タイトル*/
+.section2_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section2_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '第2章';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*セクション3タイトル*/
+.section3_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section3_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '第3章';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*セクション4タイトル*/
+.section4_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section4_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '第4章';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*セクション5タイトル*/
+.section5_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section5_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '第5章';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*セクションlastタイトル*/
+.section_last_title h1 {
+  position: relative;
+  color: #555555;
+  background: #ffeed2;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+  font-size:38px;
+}
+
+.section_last_title h1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: 'まとめテスト';
+  background: #ffa300;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 6px 9px 3px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+/*中身の余白*/
+.container{
+  margin-top: 100px;
+  margin-bottom: 250px;
+  margin-left:250px;
+  margin-right: 250px;
+  padding:0;
+  font-size: 20px;
+}
+
+
+h2 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+.contents_list a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.contents_list a:visited{
+  color: #000000;
+}
+
+.container h2{
+  color: #555555;
+  font-size: 33px;
+}
+
+
+strong{
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(transparent 30%, #fbd 30%);
+}
+
+.top_list ul, ol {
+  background: #fffcf4;
+  border-radius :8px;/*角の丸み*/
+  box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+.top_list ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.contents_list ul, ol {
+  padding: 0;
+  position: relative;
+}
+
+.contents_list ul li, ol li {
+  color: black;
+  border-left: solid 8px orange;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none!important;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+hr {
+  height: 8px;
+  background-image: repeating-linear-gradient(45deg, rgb(189, 189, 189) 0, rgb(189, 189, 189) 1px, transparent 0, transparent 50%);
+  background-size: 8px 8px;
+}
+
+
+/* ここから下がボタンのCSS　*/
+.btn-push {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  background-color: #ffa300;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #d37800;
+}
+
+.btn-push:active {
+    transform: translateY(4px);
+    border-bottom: none;
+
+}
+
+.btn{
+  padding-bottom: 30px;
+  
+}
+
+.box24 {
+  position: relative;
+  padding: 0.3em 0.5em;
+  margin: 2em 0;
+  background: #e6f4ff;
+  color: #5c98d4;
+  font-weight: bold;
+  font-size: 40px;
+}
+.box24:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+.box24 h1{
+  margin: 0; 
+  padding: 0;
 }
