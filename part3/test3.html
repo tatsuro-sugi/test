@@ -1,51 +1,63 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="utf-8">
-    <title>確認テスト</title>
-    <style>
-      .container {
-          width: 500px;
-          margin: 100px auto;
-          font-size: 15px;
-      }
-      button {
-          margin-top: 40px;
-      }
-  </style>
-   <meta name=”viewport” content=”width=device-width, initial-scale=1”>
-
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-  <p>次の文章の空欄に入る語句を適切に述べている選択肢を1つ選びなさい。</p>
-  <p>
-    炎症反応の結果、（1）が亢進する。<br>
-    その結果、血漿成分は（2）へ移行する。<br>
-    炎症反応の軽快とともに、血漿成分は血管内に戻ってくる。<br>
-    この現象を（3）という。
-  </p>
+  
+  <div class="container">
+    
+    <div class="jumbotron mt-5">
+      <div class="d-flex justify-content-center">
+        <div id="js-question" class="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
+      </div>
+      
+      <div id="js-items" class="d-flex justify-content-center">
+        
 
-    <div class="container">
-        <input type="checkbox" class="checks" value="不正解"> １：リフィリング ２：血管内 ３：血管透過性<br>
-        <input type="checkbox" class="checks" value="不正解">１：リフィリング ２：サードスペース ３：血管透過性<br>
-        <input type="checkbox" class="checks" value="不正解"> １：血管透過性 ２：細胞内 ３：リフィリング<br>
-        <input type="checkbox" class="checks" value="正解"> １：血管透過性 ２：サードスペース ３：リフィリング<br>
-        <button onclick="getValue()">結果を表示</button>
-        <input type="button" onclick="location.href='../part3/part3.html'" value="教材へ戻る">
-    </div>
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
 
-    <script>
-      function getValue() {
-          var checks = document.getElementsByClassName('checks');
-          var str = '';
+          <a class="btn" href="../part1/part1.html" role="button">Link</a>
+          <button class="btn" type="submit">Button</button>
+  
+        </div>
+          
 
-          for ( i = 0; i < checks.length; i++) {
-              if ( checks[i].checked === true ) {
-                  str += checks[i].value + " ";
-              }
-          }
-          alert(str);
-      }
-  </script>
+       
+        
+      </div>
+        
+
+  
+  <script src="app3.js"></script>
+  <a class="btn" href="part3.html" role="button">part3に戻る</a>
 </body>
+
 </html>

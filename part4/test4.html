@@ -1,62 +1,63 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="utf-8">
-    <title>確認テスト</title>
-    <style>
-      .container {
-          width: 500px;
-          margin: 100px auto;
-          font-size: 15px;
-      }
-      button {
-          margin-top: 40px;
-      }
-  </style>
-   <meta name=”viewport” content=”width=device-width, initial-scale=1”>
-
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-  <p>(1)侵襲を受けると反応する2つの内分泌システムについて、（）に当てはまる適切な語句はどれか。</p>
-  <p>
-      視床下部 - 下垂体 - （①) <br>
-      交感神経 - (②)
-  </p>
-    <div class="container">
-        <input type="checkbox" class="checks" value="①…不正解"> ①副腎髄質・②副交感神経<br>
-        <input type="checkbox" class="checks" value="②…正解">①副腎皮質・②副腎髄質<br>
-        <input type="checkbox" class="checks" value="③…不正解"> ①副交感神経・②副腎髄質<br>
-        <input type="checkbox" class="checks" value="④…正解"> ①副腎皮質・②下垂体<br>
-        <button onclick="getValue()">結果を表示</button>
-    </div>
-
-    <p>(2)次の文章を読み、( )に入る適切な選択肢を1つ選びなさい。</p>
-    <p>
-        侵襲を受けると、(①）やカテコラミンが肝臓や筋肉に作用し、（②）が起こる。<br>
-        またカテコラミンはインスリン（③）を高める。<br>
-        その結果、血糖が上昇する。
-    </p>
-      <div class="container">
-          <input type="checkbox" class="checks" value="①…不正解">①アルドステロン・②血管収縮・③感受性<br>
-          <input type="checkbox" class="checks" value="②…不正解">①コルチゾール・②糖新生・③感受性<br>
-          <input type="checkbox" class="checks" value="③…不正解">①アルドステロン・②血流増加・③抵抗性<br>
-          <input type="checkbox" class="checks" value="④…正解">①コルチゾール・②糖新生・③抵抗性<br>
-          <button onclick="getValue()">結果を表示</button>
-      </div>
+  
+  <div class="container">
     
-    <input type="button" onclick="location.href='../part5/part5.html'" value="教材へ戻る">
-    <script>
-      function getValue() {
-          var checks = document.getElementsByClassName('checks');
-          var str = '';
+    <div class="jumbotron mt-5">
+      <div class="d-flex justify-content-center">
+        <div id="js-question" class="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
+      </div>
+      
+      <div id="js-items" class="d-flex justify-content-center">
+        
 
-          for ( i = 0; i < checks.length; i++) {
-              if ( checks[i].checked === true ) {
-                  str += checks[i].value + " ";
-              }
-          }
-          alert(str);
-      }
-  </script>
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+
+          <a class="btn" href="../part1/part1.html" role="button">Link</a>
+          <button class="btn" type="submit">Button</button>
+  
+        </div>
+          
+
+       
+        
+      </div>
+        
+
+  
+  <script src="app4.js"></script>
+  <a class="btn" href="part4.html" role="button">part4に戻る</a>
 </body>
+
 </html>

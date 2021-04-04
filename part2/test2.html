@@ -1,47 +1,63 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="utf-8">
-    <title>確認テスト</title>
-    <style>
-      .container {
-          width: 500px;
-          margin: 100px auto;
-          font-size: 15px;
-      }
-      button {
-          margin-top: 40px;
-      }
-  </style>
-   <meta name=”viewport” content=”width=device-width, initial-scale=1”>
-
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-  <p>次の文章の（　）に当てはまる語句が適切に述べられている選択肢はどれか。１つ選びなさい。</p>
-  <p>侵襲が起きると、生体防御反応の結果、血球成分のうち（１）が活性化する。生体は①のはたらきをより活性化させるため、体温を上げようと（２）が起きる。
-    また感染や手術といった侵襲を受けると、（３）のはたらきによって、全身で炎症反応が生じる。
-    </p>
-    <div class="container">
-        <input type="checkbox" class="checks" value="不正解"> １：赤血球 ２：シバリング ３：サイトウサン<br>
-        <input type="checkbox" class="checks" value="不正解"> １：白血球 ２：ジャグリング ３：サイトウサン<br>
-        <input type="checkbox" class="checks" value="正解！"> １：白血球 ２：シバリング ３：サイトカイン<br>
-        <input type="checkbox" class="checks" value="不正解"> １：赤血球 ２：シバリング ３：サイトカイン<br>
-        <button onclick="getValue()">結果を表示</button>
-        <input type="button" onclick="location.href='../part2/part2.html'" value="教材へ戻る">
-    </div>
+  
+  <div class="container">
+    
+    <div class="jumbotron mt-5">
+      <div class="d-flex justify-content-center">
+        <div id="js-question" class="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
+      </div>
+      
+      <div id="js-items" class="d-flex justify-content-center">
+        
 
-    <script>
-      function getValue() {
-          var checks = document.getElementsByClassName('checks');
-          var str = '';
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" id="js-btn-1" class="btn btn-primary"></button></button>
+          </div>
 
-          for ( i = 0; i < checks.length; i++) {
-              if ( checks[i].checked === true ) {
-                  str += checks[i].value + " ";
-              }
-          }
-          alert(str);
-      }
-  </script>
+          <a class="btn" href="../part1/part1.html" role="button">Link</a>
+          <button class="btn" type="submit">Button</button>
+  
+        </div>
+          
+
+       
+        
+      </div>
+        
+
+  
+  <script src="app2.js"></script>
+  <a class="btn" href="part2.html" role="button">part2に戻る</a>
 </body>
+
 </html>
