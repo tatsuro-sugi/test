@@ -382,3 +382,8 @@ hr {
 }
 
 
+.d-flex flex-column bd-highlight mb-3{
+  border: 1px solid #aaa;
+  width: 400px;
+  text-align: center;
+}
