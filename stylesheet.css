@@ -1,15 +1,28 @@
 .box2 {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  font-weight: bold;
-  color: #6091d3;/*文字色*/
-  background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
+  position: relative;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
 }
-.box2 p {
-  margin: 0; 
-  padding: 0;
+
+.box2:before {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f0a1 １Pointアドバイス';
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 0.05em
 }
 
 .box1 {
@@ -384,4 +397,54 @@ hr {
   border: 1px solid #aaa;
   width: 400px;
   text-align: center;
+}
+
+.photo{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.top-photo{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.box5{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #2c2c2f;
+  background: #cde4ff;/*背景色*/
+}
+
+.box5 p{
+    margin: 0; 
+    padding: 0;
+}
+
+span{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.last-lesson{
+  font-size: 50px;
+}
+
+.last-photo{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.kakomu{
+	padding:3px 9px; /* 枠と文字の空間 */
+	margin:0 5px; /* 枠の外の空間 */
+	background-color:#f9f9f9; /* 枠の背景色 */
+	border:1px solid #777; /* 枠の線の太さ・種類・色 */
+	border-radius:6px; /* 枠の角を丸くする */
+	box-shadow: 1px 2px 2px #ddd; /*影をいれる*/
+	font-family:inherit; /* フォントの種類を継承する */
+	font-size:1.0em;	/* フォントの大きさ */
 }
