@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>侵襲と生体反応</title>
-  <link rel="stylesheet" href="../e-learning/stylesheet.css">
+  <link rel="stylesheet" href="./stylesheet.css">
   <link rel="icon" href="../top/favicon.ico">
   <meta name="description" content="侵襲と生体反応について学ぶサイトです">
-  <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
  
 
 </head>
 <body>
+
+  <!-- スマホナビの表示・非表示 -->
+  <script>
+    $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-menu')
+      hum.on('click', function(){
+          nav.toggleClass('toggle');
+      });
+    });
+  </script>
   
   <header>
     <div class="logo">
@@ -34,42 +46,35 @@
 
     <div class="sp-menu">
       <ul>
-        <li><a href="../part1/part1.html">第1章</a></li>
-        <li><a href="../part2/part2.html">第2章</a></li>
-        <li><a href="../part3/part3.html">第3章</a></li>
-        <li><a href="../part4/part4.html">第4章</a></li>
-        <li><a href="../part5/part5.html">第5章</a></li>
-        <li><a href="../last-test/last-test.html">まとめテスト</a></li>
+        <li><a href="part1/part1.html">第1章</a></li>
+        <li><a href="part2/part2.html">第2章</a></li>
+        <li><a href="part3/part3.html">第3章</a></li>
+        <li><a href="part4/part4.html">第4章</a></li>
+        <li><a href="part5/part5.html">第5章</a></li>
+        <li><a href="last-test/last-test.html">まとめテスト</a></li>
         <li class="close"><span>閉じる</span></li>
       </ul>
-  
+    </div>
 
     <div id="hamburger">
       <div class="icon">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+     
     </div>
 
-    <!-- jQueryの読み込み -->
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
 
 <!-- スマホナビの表示・非表示 -->
-<script>
-$(function() {
-   const hum = $('#hamburger, .close')
-   const nav = $('.sp-nav')
-   hum.on('click', function(){
-      nav.toggleClass('toggle');
-   });
-});
-</script>
+
   </header>
 
 <div class="container">
   
-  <img src="../e-learning/top.png" class="top-photo" alt="">
+  <p class="resizeimage">
+    <img src="../e-learning/top.png" class="top-photo" alt="">
+  </p>
   <section>
     <h2>Webサイトの内容</h2>
     <p>

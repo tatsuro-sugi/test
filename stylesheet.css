@@ -454,7 +454,7 @@ span{
 .sp-menu{
   display: none;
 }
-
+/*iPhone*/
 @media screen and (max-width: 640px) {
   .menu {
      display: none;
@@ -468,17 +468,18 @@ span{
      height: 100vh;
      display: block;
      width: 100%;
-     background: rgba(0, 0, 0, .8);
+     background: #ffffffcc;
      opacity: 0;
      transform: translateY(-100%);
      transition: all .2s ease-in-out;
   }
   #hamburger {
      position: relative;
-     display: block;
+     display: ;
      width: 30px;
      height: 25px;
      margin: 0 0 0 auto;
+     color: #fbd;
   }
   #hamburger span {
      position: absolute;
@@ -487,8 +488,9 @@ span{
      display: block;
      width: 100%;
      height: 2px;
-     background-color: #fff;
+     background-color: rgb(17, 231, 88);
      transform: translateY(-50%);
+     color: #fbd;
   }
   #hamburger::before {
      content: '';
@@ -498,7 +500,7 @@ span{
      left: 0;
      width: 100%;
      height: 2px;
-     background-color: #fff;
+     background-color: rgb(10, 235, 40);
   }
   #hamburger::after {
      content: '';
@@ -508,7 +510,7 @@ span{
      left: 0;
      width: 70%;
      height: 2px;
-     background-color: #fff;
+     background-color: rgb(185, 12, 12);
   }
   /*スマホメニュー*/
   .sp-menu ul {
@@ -525,7 +527,7 @@ span{
   }
   .sp-menu li span {
      font-size: 15px;
-     color: #fff;
+     color: rgb(0, 255, 136);
   }
   .sp-menu li a, .sp-menu li span {
      display: block;
@@ -562,3 +564,26 @@ span{
      transform: translateY( 0 );
      opacity: 1;
   }
+  .resizeimage img {
+     width: 100%; 
+    }
+    
+  .kekan{
+    display: flex;
+    width: 100%;
+  }
+
+  .kekkan img{
+    width: 45%;
+
+  }
+  
+}
+
+
+@media screen and (max-width: 1050px) {
+  .resizeimage img {
+    width: 100%; 
+  }
+
+}

@@ -8,9 +8,21 @@
   <meta name=”viewport” content=”width=device-width, initial-scale=1”>
   <link rel="stylesheet" href="../stylesheet.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
+
+    <script>
+      $(function() {
+        const hum = $('#hamburger, .close')
+        const nav = $('.sp-menu')
+        hum.on('click', function(){
+            nav.toggleClass('toggle');
+        });
+      });
+    </script>
     <div class="logo">
       <a href="../index.html">侵襲と生体反応
       </a>
@@ -25,6 +37,26 @@
         <li><a href="../part5/part5.html">第5章</a></li>
         <li><a href="../last-test/last-test.html">まとめテスト</a></li>
       </ul>
+    </div>
+
+    <div class="sp-menu">
+      <ul>
+        <li><a href="../part1/part1.html">第1章</a></li>
+        <li><a href="../part2/part2.html">第2章</a></li>
+        <li><a href="../part3/part3.html">第3章</a></li>
+        <li><a href="../part4/part4.html">第4章</a></li>
+        <li><a href="../part5/part5.html">第5章</a></li>
+        <li><a href="../last-test/last-test.html">まとめテスト</a></li>
+        <li class="close"><span>閉じる</span></li>
+      </ul>
+    </div>
+
+    <div id="hamburger">
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+     
     </div>
   </header>
     
@@ -56,7 +88,10 @@
       神経・内分泌系の反応は一見複雑で、苦手意識を持ちやすい人も多くいるかと思います。<br>
       ですが、ここで抑えてほしいメカニズムは大きく２種類です。下の図を眺めてみてください。
     </p>
-    <img src="../part4/図１.jpg" alt="">
+    <p class="resizeimage">
+      <img src="../part4/図１.jpg" alt="">
+    </p>
+    
 
     <p>
       図のように2つの系統を抑えましょう。<br>
@@ -70,20 +105,28 @@
     <p>
       こちらは主に副腎皮質に関連した内分泌です。特にコルチゾールを覚えましょう！
     </p>
-   
-    <img src="../part4/hukujinhisitsu.jpg" alt="">
+
+    <p class="resizeimage">
+      <img src="../part4/hukujinhisitsu.jpg" alt="">
+    </p>
+    
   </section>
     <h2>交感神経ー副腎髄質系</h2>
     <p>こちらは自律神経、なかでも交感神経に関連した内分泌です。</p>
     
+    <p class="resizeimage">
     <img src="../part4/katekoramin.jpg" alt="">
+  </p>
 
     <p>
       ここで抑えてほしいのは、コルチゾールとカテコラミンがどこに作用して、どんな反応が起こるのかです。<br>
       ２つとも肝臓・筋肉に作用して、侵襲を受けてもホメオスタシスを維持できるよう、エネルギー源を作り出します。<br>
       またカテコラミンは、心臓や血管に作用し、循環を維持できるように働きかけます（そのため心拍数・血圧↑）。
     </p>
+
+    <p class="resizeimage">
     <img src="../part4/point.jpg" alt="">
+  </p>
   
     <section>
       <h2>血糖が上昇するメカニズム</h2>
@@ -97,7 +140,10 @@
         先ほど学んだ「視床下部ー下垂体ー副腎皮質系」と「交感神経ー副腎髄質系」により分泌されたホルモンが指令を出します。<br>
         その結果、「糖新生」と「インスリン抵抗性の亢進（カテコラミンの作用による）」の２つが生じます。
       </p>
+
+      <p class="resizeimage">
       <img src="../part4/図２.jpg" alt="">
+      </p>
 
       <p>
         ここで「発熱」のパートを思い出してみましょう。<br>

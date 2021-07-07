@@ -7,8 +7,19 @@
   <title>第３章</title>
   <meta name=”viewport” content=”width=device-width, initial-scale=1”>
   <link rel="stylesheet" href="../stylesheet.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 <body>
+  <script>
+    $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-menu')
+      hum.on('click', function(){
+          nav.toggleClass('toggle');
+      });
+    });
+  </script>
   <header>
     <div class="logo">
       <a href="../index.html">侵襲と生体反応
@@ -25,6 +36,28 @@
         <li><a href="../last-test/last-test.html">まとめテスト</a></li>
       </ul>
     </div>
+
+    <div class="sp-menu">
+      <ul>
+        <li><a href="../part1/part1.html">第1章</a></li>
+        <li><a href="../part2/part2.html">第2章</a></li>
+        <li><a href="../part3/part3.html">第3章</a></li>
+        <li><a href="../part4/part4.html">第4章</a></li>
+        <li><a href="../part5/part5.html">第5章</a></li>
+        <li><a href="../last-test/last-test.html">まとめテスト</a></li>
+        <li class="close"><span>閉じる</span></li>
+      </ul>
+    </div>
+
+    <div id="hamburger">
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+     
+    </div>
+
+  
   </header>
   
     
@@ -58,9 +91,12 @@
     <p>
       腫脹がなぜ起きるのか、そのメカニズムを学んでいきましょう。<br>
       まず下の図をご覧ください。<br>
+    </p>
+    <div class="kekkan">
       <img src="../part3/kekkan.jpg" class="photo" alt="">
       <img src="../part3/kekkan2.jpg" class="photo" alt="">
-    </p>
+    </div>
+  
 
     <p>
       左の図は正常、右の図は炎症がおきた状態の血管です。<br>
