@@ -406,9 +406,14 @@ hr {
 }
 
 .top-photo{
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
+  padding-top: 25px;
+}
+
+.r-top-photo{
+  display: none;
 }
 
 .box5{
@@ -423,7 +428,7 @@ hr {
     padding: 0;
 }
 
-span{
+.span{
   font-size: 50px;
   font-weight: bold;
 }
@@ -448,14 +453,22 @@ span{
 	font-family:inherit; /* フォントの種類を継承する */
 	font-size:1.0em;	/* フォントの大きさ */
 }
-
-
-
 .sp-menu{
   display: none;
 }
-/*iPhone*/
-@media screen and (max-width: 640px) {
+
+.moor{
+  font-size: 25px;
+  font-weight:bold;
+  background:linear-gradient(transparent 70%, #FFFF00 0%);
+
+}
+
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width: 1050px) {
   .menu {
      display: none;
   }
@@ -575,15 +588,19 @@ span{
 
   .kekkan img{
     width: 45%;
-
   }
-  
+  .container{
+    padding: 20px;
+  }
+
+  .top-photo{
+    display: none;
+  }
+  .r-top-photo{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 70px;
 }
-
-
-@media screen and (max-width: 1050px) {
-  .resizeimage img {
-    width: 100%; 
-  }
 
 }
